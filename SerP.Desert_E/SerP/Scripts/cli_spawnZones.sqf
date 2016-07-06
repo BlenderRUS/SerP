@@ -17,18 +17,22 @@ _fnc_equalArrayPosition = {
 _leaders = [];
 
 for "_i" from 0 to ((count _allGroups) - 1) do {
-	private ["_group", "_leader"];
+	private ["_group", "_leader", "_leaderPos"];
 	_group = _allGroups select _i;
 	_leader = leader _group;
-	if ((side _leader) == _playerSide) then {
-		_leaders SET [count _leaders, getPos _leader];
+	_leaderPos = getPos _leader;
+	_leaderPos SET [2, 0];
+	if ((side _group) == _playerSide) then {
+		_leaders SET [count _leaders, _leaderPos];
 	};
 };
 
 _zones = [];
 // Get nearest leaders to player
+_playerMarkPos = _playerPos;
+_playerMarkPos SET [2, 0];
 {
-	if (_playerPos distance _x < (_zoneSize * 2)) then {
+	if (_playerMarkPos distance _x < (_zoneSize * 2)) then {
 		_zones SET [count _zones, _x];
 	};
 } forEach _leaders;
