@@ -46,7 +46,7 @@ switch _type do {
 		addMagazines("HandGrenade_East",3);
 		addWeapons ["ACE_G36K_iron","ACE_BackPack"];
 		addItems ["R","B","F","N"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",3]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",3]],true];
 	};
 	case "AR": {// Automatic Rifleman
 		addMagazines("100Rnd_556x45_BetaCMag",6);
@@ -68,14 +68,14 @@ switch _type do {
 		addMagazines("HandGrenade_East",3);
 		addWeapons ["ACE_AK103", "ACE_BackPack"];
 		addItems ["R","F","N","E","M","G"];
-		_unit setVariable ["ACE_RuckMagContents", [["ACE_PG7VM_PGO7",2],["ACE_OG7_PGO7",2]]];
+		_unit setVariable ["ACE_RuckMagContents", [["ACE_PG7VM_PGO7",2],["ACE_OG7_PGO7",2]],true];
 	};
 	case "LAT": {// Rifleman AT
 		addMagazines("30Rnd_556x45_G36",8);
 		addMagazines("SmokeShell",2);
 		addMagazines("HandGrenade_East",3);
 		addWeapons ["G36K","ACE_M72"];
-		_unit setVariable ["ACE_weapononback","ACE_M72"];
+		_unit setVariable ["ACE_weapononback","ACE_M72",true];
 		addItems ["R","F","N","M","G"];
 	};
 	case "SAB": {// Saboteur
@@ -84,7 +84,7 @@ switch _type do {
 		addMagazines("HandGrenade_East",3);
 		addWeapons ["MP5SD","ACE_BackPack"];
 		addItems ["R","F","N","M","G"];
-		_unit setVariable ["ACE_RuckMagContents", [["PipeBomb",2]]];
+		_unit setVariable ["ACE_RuckMagContents", [["PipeBomb",2]],true];
 	};
 	case "BG": {// Bobyguard
 		addMagazines("30Rnd_9x19_MP5",3);
@@ -114,7 +114,7 @@ switch _type do {
 		addMagazines("HandGrenade_East",2);
 		addWeapons ["ACE_AK103","ACE_BackPack"];
 		addItems ["R","F","N","M","G"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true]
 	};
 	case "AA": {//Pzrk Operator
 		addMagazines("30Rnd_556x45_G36",3);

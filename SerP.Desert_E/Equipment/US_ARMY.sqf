@@ -60,7 +60,7 @@ switch _type do {
 		addMagazines("1Rnd_HE_M203",4);
 		addWeapons ["ACE_M16A4_CCO_GL","ACE_Rucksack_MOLLE_ACU"];
 		addItems ["R","N"];
-		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",8],["FlareRed_M203",4],["ACE_SSWhite_M203",4],["ACE_1Rnd_CS_M203",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",8],["FlareRed_M203",4],["ACE_SSWhite_M203",4],["ACE_1Rnd_CS_M203",2]],true];
 	};
 	case "AR" : { // Automatic Rifleman
 		addMagazines("200Rnd_556x45_M249",4);
@@ -98,7 +98,7 @@ switch _type do {
 		addMagazines("SmokeShell",2);
 		addWeapons ["M4A1","ACE_Javelin_Direct"];
 		addItems ["R","B","N"];
-		_unit setVariable ["ACE_weapononback","ACE_Javelin_Direct"];
+		_unit setVariable ["ACE_weapononback","ACE_Javelin_Direct",true];
 	};
 	case "DM" : { //Designated marksman
 		addMagazines("30Rnd_556x45_Stanag",6);
@@ -125,7 +125,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_M16A4_Iron","ACE_Rucksack_MOLLE_ACU"];
 		addItems ["R","B","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 2]],true];
 	};
 	case "AB": { //Ammo bearer
 		addMagazines("30Rnd_556x45_Stanag",8);
@@ -134,7 +134,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_M16A4_Iron","ACE_Rucksack_MOLLE_ACU"];
 		addItems ["R","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 4]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 4]],true];
 	};
 
 //sniper team
@@ -144,8 +144,8 @@ switch _type do {
 		addMagazines("SmokeShell",2);
 		addWeapons ["M24_des_EP1","ACE_SSVZ","ACE_SniperTripod"];
 		addItems ["R","N","M","MT","G"];
-		_unit setVariable ["ACE_weapononback","m16a4"];
-		_unit setVariable ["ACE_RuckMagContents", [["5Rnd_762x51_M24", 10]]];
+		_unit setVariable ["ACE_weapononback","m16a4",true];
+		_unit setVariable ["ACE_RuckMagContents", [["5Rnd_762x51_M24", 10]],true];
 	};
 	case "SN2": { // Sniper
 		addMagazines("20Rnd_762x51_B_SCAR",6);
@@ -164,7 +164,7 @@ switch _type do {
 		addMagazines("ACE_Battery_Rangefinder",2);
 		addWeapons ["ACE_M4A1_AIM_GL","ACE_Rangefinder_OD","ACE_FAST_PackEDC_ACU"];
 		addItems ["R","N","K"];
-		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",2],["FlareRed_M203",4],["ACE_SSWhite_M203",2],["5Rnd_762x51_M24",4]]];
+		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",2],["FlareRed_M203",4],["ACE_SSWhite_M203",2],["5Rnd_762x51_M24",4]],true];
 	};
 
 //mortar
@@ -183,8 +183,8 @@ switch _type do {
 		addMagazines("SmokeShell",2);
 		addWeapons ["ACE_M4_AIM","ACE_M224TripodProxy"];
 		addItems ["R","N","B","E"];
-		_unit setVariable ["ACE_weapononback","ACE_Rucksack_MOLLE_Green"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224WP_CSWDM",3],["ACE_M224HE_CSWDM",2]]];
+		_unit setVariable ["ACE_weapononback","ACE_Rucksack_MOLLE_Green",true];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224WP_CSWDM",3],["ACE_M224HE_CSWDM",2]],true];
 	};
 	case "MOAB" : { //Mortar Ammo Bearer
 		addMagazines("30Rnd_556x45_Stanag",4);
@@ -192,7 +192,7 @@ switch _type do {
 		addMagazines("SmokeShell",2);
 		addWeapons ["ACE_M4_AIM","ACE_Rucksack_MOLLE_Green"];
 		addItems ["R","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224HE_CSWDM",10]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224HE_CSWDM",10]],true];
 	};
 
 //Medevac team
@@ -201,7 +201,7 @@ switch _type do {
 		addMagazines("SmokeShell",4);
 		addWeapons ["M4A1","ACE_Rucksack_MOLLE_DMARPAT_Medic"];
 		addItems ["R","B","N","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true]
 	};
 
 	case "MED": { //Medic
@@ -209,7 +209,7 @@ switch _type do {
 		addMagazines("SmokeShell",4);
 		addWeapons ["M4A1","ACE_Rucksack_MOLLE_DMARPAT_Medic"];
 		addItems ["R","N"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true]
 	};
 
 //crew

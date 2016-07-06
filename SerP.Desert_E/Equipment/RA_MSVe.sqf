@@ -53,7 +53,7 @@ switch _loadout do {
 		addMagazines("HandGrenade_East",2);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_RD90"];
 		addItems ["R","B","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x54_PK",4]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x54_PK",4]],true];
 	};
 	case "AR" : { //Пулеметчик РПК
 		addMagazines("ACE_75Rnd_545x39_T_RPK",6);
@@ -75,7 +75,7 @@ switch _loadout do {
 		addMagazines("HandGrenade_East",2);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_RD90"];
 		addItems ["R","B","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_PG7VM_PGO7",4]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_PG7VM_PGO7",4]],true];
 	};
 	case "GL" : { //Стрелок с ГП
 		addMagazines("30Rnd_545x39_AK",7);
@@ -146,8 +146,8 @@ switch _loadout do {
 		addMagazines("HandGrenade_East",2);
 		addWeapons ["Pecheneg"];
 		addItems ["R","N","E"];
-		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x54_PK",4]]];
+		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90",true];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x54_PK",4]],true];
 	};
 	case "R_R" : { // Разведчик - радиотелефонист
 		addMagazines("30Rnd_545x39_AK",7);
@@ -163,7 +163,7 @@ switch _loadout do {
 		addMagazines("HandGrenade_East",2);
 		addWeapons ["ACE_Val_Kobra","ACE_Rucksack_RD90"];
 		addItems ["R","N","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_MON50_M",5],["PipeBomb",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_MON50_M",5],["PipeBomb",2]],true];
 	};
 	case "R_VSS" : { // Разведчик - ВСС
 		addMagazines("20Rnd_9x39_SP5_VSS",8);
@@ -211,7 +211,7 @@ switch _loadout do {
 		addMagazines("ACE_RDGM",2);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_RD90"];
 		addItems ["R","N","B","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["AT13",1],["30Rnd_545x39_AK",10]]];
+		_unit setVariable ["ACE_RuckMagContents",[["AT13",1],["30Rnd_545x39_AK",10]],true];
 	};
 	case "HAT" : { //1й номер расчета РПГ-29
 		addMagazines("30Rnd_545x39_AK",6);
@@ -227,7 +227,7 @@ switch _loadout do {
 		addMagazines("HandGrenade_East",2);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_RD90","ACE_YardAge450"];
 		addItems ["R","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_RPG29_PG29",2],["ACE_RPG29_TBG29",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_RPG29_PG29",2],["ACE_RPG29_TBG29",2]],true];
 	};
 //расчет миномета
 	case "MOG" : { //Старший наводчик
@@ -249,7 +249,7 @@ switch _loadout do {
 		addMagazines("ACE_RDGM",2);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_RD90"];
 		addItems ["R","N","B","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["HandGrenade_East",4],["30Rnd_545x39_AK",4]]];
+		_unit setVariable ["ACE_RuckMagContents",[["HandGrenade_East",4],["30Rnd_545x39_AK",4]],true];
 	};
 //отделение АГС
 	case "AGL" : { //Старший наводчик
@@ -272,7 +272,7 @@ switch _loadout do {
 		addMagazines("ACE_RDGM",2);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_RD90"];
 		addItems ["R","N","B","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["HandGrenade_East",4],["30Rnd_545x39_AK",4]]];
+		_unit setVariable ["ACE_RuckMagContents",[["HandGrenade_East",4],["30Rnd_545x39_AK",4]],true];
 	};
 //стрелковое отделение
 	case "MR" : { //Стрелок СВД
@@ -291,8 +291,8 @@ switch _loadout do {
 		addMagazines("ACE_MON50_M",2);
 		addWeapons ["vil_SV_98","ACE_APSB"];
 		addItems ["R","N","B","M","G"];
-		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90"];
-		_unit setVariable ["ACE_RuckMagContents",[["10Rnd_762x54_SVD",10]]];
+		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90",true];
+		_unit setVariable ["ACE_RuckMagContents",[["10Rnd_762x54_SVD",10]],true];
 	};
 	case "HSN" : { //Снайпер КСВК
 		addMagazines("5Rnd_127x108_KSVK",8);
@@ -301,8 +301,8 @@ switch _loadout do {
 		addMagazines("ACE_MON50_M",2);
 		addWeapons ["KSVK","ACE_APSB"];
 		addItems ["R","N","B","M","G"];
-		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90"];
-		_unit setVariable ["ACE_RuckMagContents",[["5Rnd_127x108_KSVK",10],["ACE_MON50_M",1]]];
+		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90",true];
+		_unit setVariable ["ACE_RuckMagContents",[["5Rnd_127x108_KSVK",10],["ACE_MON50_M",1]],true];
 	};
 	case "ASN" : { //Снайпер-наблюдатель
 		addMagazines("10Rnd_762x54_SVD",5);
@@ -313,8 +313,8 @@ switch _loadout do {
 		addMagazines("ACE_MON50_M",2);
 		addWeapons ["vil_SVD_P21","ACE_APSB","Binocular_Vector"];
 		addItems ["R","N","K"];
-		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90"];
-		_unit setVariable ["ACE_RuckMagContents",[["vil_10Rnd_762x54_SV",10],["ACE_MON50_M",1]]];
+		_unit setVariable ["ACE_weapononback","ACE_Rucksack_RD90",true];
+		_unit setVariable ["ACE_RuckMagContents",[["vil_10Rnd_762x54_SV",10],["ACE_MON50_M",1]],true];
 
 	};
 //отделение сбора и эвакуации раненых
@@ -324,7 +324,7 @@ switch _loadout do {
 		addMagazines("ACE_RDGM",4);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_MOLLE_DMARPAT_Medic"];
 		addItems ["R","N","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_LargeBandage",5],["ACE_Tourniquet",3]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_LargeBandage",5],["ACE_Tourniquet",3]],true]
 	};
 	case "MED" : { //Санитар
 		addMagazines("30Rnd_545x39_AK",5);
@@ -332,7 +332,7 @@ switch _loadout do {
 		addMagazines("ACE_RDGM",4);
 		addWeapons ["ACE_AK74M","ACE_Rucksack_MOLLE_DMARPAT_Medic"];
 		addItems ["R","N"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_LargeBandage",5],["ACE_Tourniquet",3]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_LargeBandage",5],["ACE_Tourniquet",3]],true]
 	};
 //экипаж
 	case "CRWVC" : { //Командир техники

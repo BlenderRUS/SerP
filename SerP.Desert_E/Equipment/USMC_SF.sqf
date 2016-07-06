@@ -18,7 +18,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",4);
 		addWeapons ["ACE_HK416_D10_M320", "ACE_PRC119","ACE_YardAge450"];
 		addItems ["R","L","B","N","D","M","H","G"];
-		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",4],["ACE_SSWhite_M203",4]]];
+		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",4],["ACE_SSWhite_M203",4]],true];
 	};
 	case "AR" : { // Automatic Rifleman SF
 		addMagazines("200Rnd_556x45_M249",3);
@@ -27,7 +27,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",4);
 		addWeapons ["M249_EP1", "ACE_USPSD","ACE_Rucksack_MOLLE_Green"];
 		addItems ["R","L","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["200Rnd_556x45_M249", 2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["200Rnd_556x45_M249", 2]],true];
 	};
 	case "AR2" : { // Automatic Rifleman SF
 		addMagazines("100Rnd_556x45_M249",4);
@@ -36,7 +36,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",4);
 		addWeapons ["M249_m145_EP1", "ACE_USPSD","ACE_Rucksack_MOLLE_Green"];
 		addItems ["R","L","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_556x45_M249", 2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_556x45_M249", 2]],true];
 	};
 	case "SN" : { // Sniper SF M24
 		addMagazines("5Rnd_762x51_M24",8);
@@ -62,8 +62,8 @@ switch _type do {
 		addMagazines("ACE_Battery_Rangefinder",2);
 		addWeapons ["DMR", "ACE_Rangefinder_OD","ACE_Rucksack_MOLLE_Green"];
 		addItems ["R","L","N","K"];
-		_unit setVariable ["ACE_weapononback","ACE_HK416_D14"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Claymore_M", 3], ["HandGrenade_West", 2], ["SmokeShell", 2], ["30Rnd_556x45_Stanag", 4]]];
+		_unit setVariable ["ACE_weapononback","ACE_HK416_D14",true];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Claymore_M", 3], ["HandGrenade_West", 2], ["SmokeShell", 2], ["30Rnd_556x45_Stanag", 4]],true];
 	};
 	case "DM" : { // Designated Marksman SF
 		addMagazines("20Rnd_762x51_DMR",8);
@@ -79,7 +79,7 @@ switch _type do {
 		addMagazines("SmokeShell",2);
 		addWeapons ["ACE_HK416_D14", "ACE_USPSD", "ACE_Rucksack_MOLLE_Green_Medic"];
 		addItems ["R","L","N"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true]
 	};
 	case "RC" : { // Recon SF
 		addMagazines("30Rnd_556x45_StanagSD",8);
@@ -104,7 +104,7 @@ switch _type do {
 		addMagazines("ACE_12Rnd_45ACP_USPSD",4);
 		addWeapons ["ACE_HK416_D10_AIM", "ACE_USPSD","ACE_Rucksack_MOLLE_Green"];
 		addItems ["R","L","B","N","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["PipeBomb", 3]]];
+		_unit setVariable ["ACE_RuckMagContents",[["PipeBomb", 3]],true];
 	};
 	default { hintC format["Equipment %1 not found for %2", _type, _unit] };
 };

@@ -37,7 +37,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",3);
 		addWeapons ["AK_47_M","ACE_BackPack"];
 		addItems ["R","B","F","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x54_PK",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x54_PK",2]],true];
 	};
 	case "MGM60": {//Machinegunner
 		addMagazines("100Rnd_762x51_M240",2);
@@ -50,7 +50,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",3);
 		addWeapons ["AK_47_M","ACE_BackPack"];
 		addItems ["R","B","F","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2]],true];
 	};
 	case "AR": {// Automatic Rifleman
 		addMagazines("75Rnd_545x39_RPK",4);
@@ -70,7 +70,7 @@ switch _type do {
 		addMagazines("HandGrenade_East",3);
 		addWeapons ["AK_47_M", "ACE_BackPack"];
 		addItems ["R","F","E","M"];
-		_unit setVariable ["ACE_RuckMagContents", [["PG7V",2],["OG7",2]]];
+		_unit setVariable ["ACE_RuckMagContents", [["PG7V",2],["OG7",2]],true];
 	};
 	case "LAT": {// Rifleman AT
 		addMagazines("30Rnd_762x39_AK47",3);
@@ -82,19 +82,19 @@ switch _type do {
 		addMagazines("30Rnd_762x39_AK47",3);
 		addWeapons ["AK_47_S","ACE_BackPack"];
 		addItems ["R","F","M"];
-		_unit setVariable ["ACE_RuckMagContents", [["PipeBomb",2]]];
+		_unit setVariable ["ACE_RuckMagContents", [["PipeBomb",2]],true];
 	};
 	case "SAP": {// Sapper
 		addMagazines("30Rnd_762x39_AK47",3);
 		addWeapons ["AK_47_S", "NVGoggles","ACE_BackPack"];
 		addItems ["R","F","M"];
-		_unit setVariable ["ACE_RuckMagContents", [["BAF_ied_v2",2],["BAF_ied_v4",2]]];
+		_unit setVariable ["ACE_RuckMagContents", [["BAF_ied_v2",2],["BAF_ied_v4",2]],true];
 	};
 	case "ASAP": {// Asst. Sapper
 		addMagazines("30Rnd_762x39_AK47",3);
 		addWeapons ["AK_47_S","ACE_BackPack"];
 		addItems ["R","F","M"];
-		_unit setVariable ["ACE_RuckMagContents", [["BAF_ied_v1",2],["BAF_ied_v3",2]]];
+		_unit setVariable ["ACE_RuckMagContents", [["BAF_ied_v1",2],["BAF_ied_v3",2]],true];
 	};
 	case "RF": {// Rifleman
 		addMagazines("ACE_10Rnd_762x39_B_SKS",6);
@@ -128,7 +128,7 @@ switch _type do {
 		addMagazines("30Rnd_762x39_AK47",3);
 		addWeapons ["AK_47_S","ACE_BackPack"];
 		addItems ["R","F","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true]
 	};
 	case "GL": {//Grenadier
 		addMagazines("30Rnd_762x39_AK47",4);
@@ -136,7 +136,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",4);
 		addWeapons ["AK_47_S"];
 		addItems ["R","F","M"];
-		_unit setVariable ["ACE_weapononback","M79_EP1"];
+		_unit setVariable ["ACE_weapononback","M79_EP1",true];
 	};
 	case "AA": {//Pzrk Operator
 		addMagazines("30Rnd_762x39_AK47",3);
@@ -164,7 +164,7 @@ switch _type do {
 		addMagazines("HandGrenade_East",2);
 		addWeapons ["AK_47_S","ACE_BackPack_ACR"];
 		addItems ["R","F","M","E"];
-		_unit setVariable ["ACE_RuckMagContents", [["ACE_DSHKM_CSWDM",4]]];
+		_unit setVariable ["ACE_RuckMagContents", [["ACE_DSHKM_CSWDM",4]],true];
 	};
 //голодранцы
 	case "L_PM" : {

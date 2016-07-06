@@ -24,7 +24,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["M249_m145_EP1", "M9SD","ACE_FAST_PackEDC_ACU"];
 		addItems ["R","L","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_556x45_M249", 2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_556x45_M249", 2]],true];
 	};
 	case "MG": {//Machinegunner
 		addMagazines("100Rnd_762x51_M240",3);
@@ -33,7 +33,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["Mk_48_DES_EP1", "M9SD","ACE_FAST_PackEDC_ACU"];
 		addItems ["R","L","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2]],true];
 	};
 	case "RC": {// Operator SD
 		addMagazines("30Rnd_556x45_StanagSD",8);
@@ -77,8 +77,8 @@ switch _type do {
 		addWeapons ["ACE_SOC_M4A1_GL_AIMPOINT","ACE_FAST_PackEDC_ACU"];
 		addItems ["R","L","N"];
 		addMagazines("6Rnd_HE_M203",3);
-		_unit setVariable ["ACE_weapononback","ACE_M32"];
-		_unit setVariable ["ACE_RuckMagContents",[["FlareRed_M203", 4], ["6Rnd_HE_M203", 1], ["1Rnd_Smoke_M203", 6]]];
+		_unit setVariable ["ACE_weapononback","ACE_M32",true];
+		_unit setVariable ["ACE_RuckMagContents",[["FlareRed_M203", 4], ["6Rnd_HE_M203", 1], ["1Rnd_Smoke_M203", 6]],true];
 	};
 	case "SAP" : {// Sapper SF
 		addMagazines("30Rnd_556x45_Stanag",8);
@@ -88,7 +88,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",3);
 		addWeapons ["ACE_SOC_M4A1_Aim", "M9SD", "ACE_FAST_PackEDC_ACU"];
 		addItems ["R","L","N","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Claymore_M", 3]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Claymore_M", 3]],true];
 	};
 	case "SAB" : {// Saboteur SF
 		addMagazines("30Rnd_556x45_StanagSD",8);
@@ -97,7 +97,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",3);
 		addWeapons ["ACE_SOC_M4A1_SD_9", "M9SD", "ACE_FAST_PackEDC_ACU"];
 		addItems ["R","L","N","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["PipeBomb", 3]]];
+		_unit setVariable ["ACE_RuckMagContents",[["PipeBomb", 3]],true];
 	};
 	case "DM": {//Marksman
 		addMagazines("20Rnd_762x51_DMR",8);
@@ -151,7 +151,7 @@ switch _type do {
 		addMagazines("ACE_Battery_Rangefinder",2);
 		addWeapons ["ACE_SOC_M4A1_RCO_GL", "Binocular_Vector", "ACE_PRC119_ACU"];
 		addItems ["R","L","N","M","G","D","K"];
-		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",2],["ACE_SSWhite_M203",2], ["ACE_Claymore_M",3]]];
+		_unit setVariable ["ACE_RuckMagContents",[["1Rnd_HE_M203",2],["ACE_SSWhite_M203",2], ["ACE_Claymore_M",3]],true];
 	};
 	case "FAС": {// Forvard Aircraft Controller
 		addMagazines("30Rnd_556x45_Stanag",6);
@@ -169,7 +169,7 @@ switch _type do {
 		addMagazines("SmokeShell",2);
 		addWeapons ["ACE_SOC_M4A1_Aim","ACE_Rucksack_MOLLE_ACU_Medic"];
 		addItems ["R","L","N"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true]
 	};
 	default { hintC format["Equipment %1 not found for %2", _type, _unit] };
 };

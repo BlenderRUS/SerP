@@ -23,7 +23,6 @@ class blnd_counter {
 		{
 			font = "Zeppelin32";
 			color = "#ffffff";
-			colorLink = "#D09B43";
 			align = "center";
 			shadow = 1;
 		};

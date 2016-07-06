@@ -49,7 +49,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_P226","BAF_L85A2_UGL_Holo","ACE_AssaultPack_BAF"];
 		addItems ["R","N","M","L"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_1Rnd_HE_M203",6]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_1Rnd_HE_M203",6]],true];
 	};
 	case "LMG" : {//Section Light Machinegunner
 		addMagazines("200Rnd_556x45_L110A1",2);
@@ -59,7 +59,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_P226","BAF_L110A1_Aim","ACE_AssaultPack_BAF"];
 		addItems ["R","N","M","L"];
-		_unit setVariable ["ACE_RuckMagContents",[["200Rnd_556x45_L110A1",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["200Rnd_556x45_L110A1",2]],true];
 	};
 	case "GPMG" : {//Section MG
 		addMagazines("100Rnd_762x51_M240",3);
@@ -77,7 +77,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_P226","BAF_L85A2_RIS_ACOG","ACE_AssaultPack_BAF"];
 		addItems ["R","N","D","M","L","B"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true];
 	};
 	case "GRENB" : {//Section Grenadier Breach
 		addMagazines("30Rnd_556x45_Stanag",4);
@@ -89,8 +89,8 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_P226","BAF_L85A2_UGL_Holo","ACE_AssaultPack_BAF"];
 		addItems ["R","N","M","L"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_1Rnd_HE_M203",4],["ACE_8Rnd_12Ga_Slug",4]]];
-		_unit setVariable ["ACE_weapononback","M1014"];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_1Rnd_HE_M203",4],["ACE_8Rnd_12Ga_Slug",4]],true];
+		_unit setVariable ["ACE_weapononback","M1014",true];
 	};
 	case "SS" : {//Section Sharpshooter
 		addMagazines("ACE_20Rnd_762x51_T_M110",2);
@@ -100,7 +100,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_P226","ACE_M110","ACE_AssaultPack_BAF"];
 		addItems ["R","N","L","M","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_20Rnd_762x51_S_M110",6]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_20Rnd_762x51_S_M110",6]],true];
 	};
 	case "AT" : {//Section AT operator
 		addMagazines("30Rnd_556x45_Stanag",6);
@@ -125,8 +125,8 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_P226","BAF_L85A2_RIS_Holo","ACE_M224TripodProxy"];
 		addItems ["R","N","B","E"];
-		_unit setVariable ["ACE_weapononback","ACE_AssaultPack_BAF"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224WP_CSWDM",3],["ACE_M224HE_CSWDM",2]]];
+		_unit setVariable ["ACE_weapononback","ACE_AssaultPack_BAF",true];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224WP_CSWDM",3],["ACE_M224HE_CSWDM",2]],true];
 	};
 	case "MOAB" : {//Mortar Ammo Bearer
 		addMagazines("30Rnd_556x45_Stanag",4);
@@ -136,7 +136,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["ACE_P226","BAF_L85A2_RIS_Holo","ACE_AssaultPack_BAF"];
 		addItems ["R","N","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224_HE_CSWDM",5]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_M224_HE_CSWDM",5]],true];
 	};
 //crew
 	case "LPL": { //Pilot
@@ -156,14 +156,14 @@ switch _type do {
 		addMagazines("SmokeShell",4);
 		addWeapons ["BAF_L85A2_RIS_Holo","ACE_Rucksack_MOLLE_DMARPAT_Medic"];
 		addItems ["R","B","N","M"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true];
 	};
 	case "MED": { //Medic
 		addMagazines("30Rnd_556x45_Stanag",8);
 		addMagazines("SmokeShell",4);
 		addWeapons ["BAF_L85A2_RIS_Holo","ACE_Rucksack_MOLLE_DMARPAT_Medic"];
 		addItems ["R","N"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true];
 	};
 	case "DRIV": { //Driver
 		addMagazines("30Rnd_556x45_Stanag",8);

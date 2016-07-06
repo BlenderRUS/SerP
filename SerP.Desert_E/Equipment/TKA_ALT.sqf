@@ -114,7 +114,7 @@ switch _type do {
 		addMagazines("ACE_30Rnd_762x39_T_AK47",2);
 		addMagazines("SmokeShell",2);
 		addWeapons ["ACE_AKMS","ACE_Rucksack_MOLLE_Green_Medic"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true];
 		addItems ["R","B","N","M"];
 	};
 

@@ -42,7 +42,7 @@ switch _type do {
 		addMagazines("SmokeShell",3);
 		addMagazines("7Rnd_45ACP_1911",3);
 		addWeapons ["M24_des_EP1","Colt1911","ACE_Rucksack_MOLLE_ACU","ACE_SniperTripod"];
-		_unit setVariable ["ACE_RuckMagContents",[["5Rnd_762x51_M24",12]]];
+		_unit setVariable ["ACE_RuckMagContents",[["5Rnd_762x51_M24",12]],true];
 		addItems ["R","B","N","D","M","MT","GM","E","K"];
 	};
 	//Sniper Assistent
@@ -56,7 +56,7 @@ switch _type do {
 		addMagazines("7Rnd_45ACP_1911",3);
 		addWeapons ["ACE_Rangefinder_OD"];
 		addWeapons ["m107","Colt1911","ACE_FAST_PackEDC_ACU"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Claymore_M", 2],["HandGrenade_West", 2],["SmokeShell", 2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Claymore_M", 2],["HandGrenade_West", 2],["SmokeShell", 2]],true];
 		addItems ["R","N","D","M","MT","GM","E","K","SS"];
 	};
 

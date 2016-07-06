@@ -32,7 +32,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",3);
 		addWeapons ["M16A2","ACE_Rucksack_MOLLE_ACU"];
 		addItems ["B","F","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240",2]],true];
 	};
 
 	case "HAT": {//AT Operator
@@ -49,7 +49,7 @@ switch _type do {
 		addMagazines("Dragon_EP1",1);
 		addWeapons ["M16A2","ACE_Rucksack_MOLLE_ACU"];
 		addItems ["B","F"];
-		_unit setVariable ["ACE_RuckMagContents", [["Dragon_EP1",1]]];
+		_unit setVariable ["ACE_RuckMagContents", [["Dragon_EP1",1]],true];
 	};
 
 	case "LAT": {// Rifleman AT
@@ -78,7 +78,7 @@ switch _type do {
 		addMagazines("30Rnd_556x45_Stanag",6);
 		addWeapons ["M16A2", "ACE_Rucksack_MOLLE_ACU"];
 		addItems ["R","F"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]]
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true]
 	};
 
 	case "GL": {//Grenadier
@@ -87,7 +87,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",4);
 		addWeapons ["M16A2"];
 		addItems ["F"];
-		_unit setVariable ["ACE_weapononback","M79_EP1"];
+		_unit setVariable ["ACE_weapononback","M79_EP1",true];
 	};
 
 	case "AA": {//Pzrk Operator
@@ -116,7 +116,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["M16A2","ACE_BackPack_ACR"];
 		addItems ["F","E"];
-		_unit setVariable ["ACE_RuckMagContents", [["ACE_M2_CSWDM",4]]];
+		_unit setVariable ["ACE_RuckMagContents", [["ACE_M2_CSWDM",4]],true];
 	};
 	default { hintC format["Equipment %1 not found for %2", _type, _unit] };
 };

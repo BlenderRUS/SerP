@@ -1,7 +1,7 @@
 //радиус зоны за которую нельзя выходить во время брифинга ингейм
 defZoneSize = 50;
 //толщина зоны в которой будет выскакивать хинт о покидании зоны брифинга
-hintzonesize = 30;
+hintzonesize = 30; // НЕ ИСПОЛЬЗУЕТСЯ
 //стартовая зона REDFOR будет равна defZoneSize*zoneMultREDFOR
 zoneMultREDFOR = 1;
 //стартовая зона BLUEFOR будет равна defZoneSize*zoneMultBLUEFOR
@@ -14,7 +14,7 @@ zoneMultBLUEFOR = 1;
 sideREDFOR = "east";
 sideBLUEFOR = "west";
 //здесь можно описать условие при котором техника в стартовой зоне не будет зафиксирована. Доступны 2 переменные - _side - какая сторона стартует в зоне, и _object - объект, который будет/не будет зафисирован. Пример: "_side == west" - на старте синих можно свободно кататься, "_object isKindOf 'tank'" - можно кататься на танках
-vehHolderExludeCondition = "false";
+vehHolderExludeCondition = "_object == ah1";
 //Текст который будет использован в сообщении о победе/проигрыше
 //Допустимые значения: STR_ru_call, STR_ruspn_call, STR_usmc_call, STR_usarmy_call, STR_75th_call, STR_napa_call, STR_ta_call, STR_cdkz_call, STR_pot_call, STR_CDF_call
 //Можно дописать свое в stringtable.xml

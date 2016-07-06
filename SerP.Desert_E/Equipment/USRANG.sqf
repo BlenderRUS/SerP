@@ -16,7 +16,7 @@ case "PSG": {// Platoon Sergant
 		addMagazines("30Rnd_556x45_Stanag",6);
 		addMagazines("SmokeShell",2);
 		addWeapons ["SCAR_L_STD_HOLO","ACE_Rucksack_MOLLE_ACU_Medic"];
-		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]]];
+		_unit setVariable ["ACE_RuckMagContents",[["ACE_Bandage",10],["ACE_Morphine",10],["ACE_Epinephrine",10],["ACE_Medkit",10]],true];
 		addItems ["R","N","D","M","MT","G"];
 	};
 	case "RATELO": {// Platoon RATELO
@@ -103,7 +103,7 @@ case "PSG": {// Platoon Sergant
 		addMagazines("HandGrenade_West",2);
 		addWeapons ["SCAR_L_STD_HOLO","ACE_Rucksack_MOLLE_ACU"];
 		addItems ["R","N","B","M","G","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 3]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 3]],true];
 	};
 	case "AB": {//Ammo bearer
 		addMagazines("30Rnd_556x45_Stanag",6);
@@ -112,7 +112,7 @@ case "PSG": {// Platoon Sergant
 		addMagazines("HandGrenade_West",1);
 		addWeapons ["SCAR_L_STD_HOLO","ACE_Rucksack_MOLLE_ACU"];
 		addItems ["R","N","M","G","E"];
-		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 3]]];
+		_unit setVariable ["ACE_RuckMagContents",[["100Rnd_762x51_M240", 3]],true];
 	};
 	default { hintC format["Equipment %1 not found for %2", _type, _unit] };
 };

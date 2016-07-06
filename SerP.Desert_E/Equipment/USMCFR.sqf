@@ -62,7 +62,7 @@ switch _type do {
 		addMagazines("HandGrenade_West",2);
 		addMagazines("SmokeShell",2);
 		addWeapons ["ACE_M4_Eotech"];
-		_unit setVariable ["ACE_weapononback", "M79_EP1"];
+		_unit setVariable ["ACE_weapononback", "M79_EP1",true];
 		addItems ["R","N","G","M","GM"];
 	};
 	case "DM": {

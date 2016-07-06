@@ -7,12 +7,13 @@
 	Return:
 	- (int) Value
 */
-
+private ["_return", "_cfg"];
 _return = _this select 1;
 
 _cfg = missionConfigFile >> "Params";
 
 for "_i" from 0 to ((count _cfg) - 1) do {
+	private "_entry";
 	_entry = _cfg select _i;
 	if ((configName _entry) == (_this select 0)) exitWith {
 		if (isNil "paramsArray") then {

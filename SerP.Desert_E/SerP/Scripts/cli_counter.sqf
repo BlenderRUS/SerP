@@ -31,7 +31,7 @@ _exit = false;
 
 if (isNil QUOTE(VAR(TimeLeft))) then {
 	private "_safeCount";
-	_safeCount = 10;
+	_safeCount = 60;
 	_exit = true;
 	for "_i" from 1 to _safeCount do {
 		sleep 1;
