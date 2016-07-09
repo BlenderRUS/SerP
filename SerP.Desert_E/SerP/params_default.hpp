@@ -41,3 +41,9 @@ class spawnZoneType {
 	default = 0;
 	code = "SerP_spawnZoneType = %1";
 };
+class changeOptics {
+	title = "$STR_serp_ChangeOptics";
+	values[] = {0,1};
+	texts[] = {$STR_Off,$STR_On};
+	default = 1;
+};

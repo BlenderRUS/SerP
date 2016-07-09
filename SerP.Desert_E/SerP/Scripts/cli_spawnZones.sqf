@@ -1,3 +1,5 @@
+#include "blnd_macros.h"
+
 private ["_leaders", "_zones", "_exit", "_finalPos", "_returnZoneSize", "_left", "_right", "_top", "_bottom"];
 _fnc_equalArrayPosition = {
 	private ["_return", "_p1", "_p1_x", "_p1_y"];
@@ -6,7 +8,6 @@ _fnc_equalArrayPosition = {
 	_p1_x = _p1 select 0;
 	_p1_y = _p1 select 1;
 	{
-		//_x = _x select 0;
 		if (_p1_x == (_x select 0) && { _p1_y == (_x select 1) }) exitWith {
 			_return = true;
 		};
@@ -20,7 +21,10 @@ for "_i" from 0 to ((count _allGroups) - 1) do {
 	private ["_group", "_leader", "_leaderPos"];
 	_group = _allGroups select _i;
 	_leader = leader _group;
-	_leaderPos = getPos _leader;
+	_leaderPos = OGVAR(_leader,SpawnPosition,nil); // Macros should be included before "call"
+	if (isNil "_leaderPos") then {
+		_leaderPos = getPos _leader;
+	};
 	_leaderPos SET [2, 0];
 	if ((side _group) == _playerSide) then {
 		_leaders SET [count _leaders, _leaderPos];

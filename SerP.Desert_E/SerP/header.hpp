@@ -11,7 +11,7 @@ class Extended_PostInit_EventHandlers {
 	};
 };
 
-SerP_version = 38.51;
+SerP_version = 38.52;
 SerP_edition = "Allatum";
 respawn = 1;
 respawndelay = 3;

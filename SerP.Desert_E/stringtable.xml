@@ -453,6 +453,10 @@
 			<Original>Independent squads</Original>
 			<Russian>Независимые отделения</Russian>
 		</Key>
+		<Key ID="STR_SerP_ChangeOptics">
+			<Original>Change NV Optics</Original>
+			<Russian>Смена НВ-прицелов</Russian>
+		</Key>
     </Container>
   </Package>
 </Project>

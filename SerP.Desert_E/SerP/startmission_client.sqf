@@ -61,7 +61,12 @@ if (warbegins == 0) then {
 	
 	[] spawn FNC(MarkersLoop);
 	[] call FNC(SetMissionConditions);
-	_act_optics = _player addAction [localize "STR_SerP_OpticsChange", "SerP\scripts\opticsChange.sqf"];
+	
+	_change_optics_enabled = ["changeOptics", 1] call FNC(GetParam);
+	_act_optics = -1;
+	if (_change_optics_enabled == 1) then {
+		_act_optics = _player addAction [localize "STR_SerP_OpticsChange", "SerP\scripts\opticsChange.sqf"];
+	};
 
 	[""] call FNC(Status);
 	waitUntil {sleep 0.102; warbegins == 1};
@@ -89,8 +94,9 @@ if (warbegins == 0) then {
 			_vehFiredObject removeEventHandler ["fired", _vehEntry select 1];
 		};
 	};
-
-	_player removeAction _act_optics;	
+	if (_change_optics_enabled == 1) then {
+		_player removeAction _act_optics;	
+	};
 } else { // STARTED WITH WARBEGINS == 1
 	if (GVAR(MARKERS_STARTED,false)) then { [] spawn FNC(MarkersLoop) };
 	[""] call FNC(Status);
