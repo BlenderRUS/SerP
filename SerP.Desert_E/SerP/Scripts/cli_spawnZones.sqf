@@ -77,7 +77,12 @@ _bottom = 0;
 
 _finalPos = [_left + ((_right - _left) / 2), _top + ((_bottom - _top) / 2)];
 if ((count _zones) > 1) then {
-	_returnZoneSize = ((_right - _left) max (_top - _bottom)) + (_zoneSize / 2);
+	private ["_h_max", "_h_min", "_v_max", "_v_min"];
+	_h_max = _right max _left;
+	_h_min = _right min _left;
+	_v_max = _top max _bottom;
+	_v_min = _top min _bottom;
+	_returnZoneSize = ((_h_max - _h_min) max (_v_max - _v_min)) + (_zoneSize / 2);
 } else {
 	_returnZoneSize = _zoneSize;
 };
